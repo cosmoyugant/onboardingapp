@@ -17,7 +17,7 @@ defmodule OnboardingappWeb.Router do
   scope "/", OnboardingappWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", WelcomeLive, :index
   end
 
   # Other scopes may use custom stacks.
